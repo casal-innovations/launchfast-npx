@@ -9,6 +9,7 @@
 	"dependencies": {
 		"@launchfasthq/cli": "^1.0.0"
 	},
+	"sideEffects": false,
 	"engines": {
 		"node": ">=18"
 	},

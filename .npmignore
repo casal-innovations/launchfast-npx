@@ -1,1 +1,9 @@
+# Exclude internal documentation
+README.md
+CLAUDE.md
 .claude/
+
+# Development files
+.github/
+.git/
+node_modules/
