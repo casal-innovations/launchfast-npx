@@ -1,0 +1,30 @@
+{
+	"name": "@launchfasthq/create",
+	"version": "1.0.1",
+	"description": "CLI to scaffold a new LaunchFast project",
+	"type": "module",
+	"bin": {
+		"create-launchfast": "bin/launchfast.js"
+	},
+	"dependencies": {
+		"@launchfasthq/cli": "^1.0.0"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/casal-innovations/launchfast-npx.git"
+	},
+	"keywords": [
+		"launchfast",
+		"remix",
+		"starter",
+		"scaffold"
+	],
+	"author": "Casal Innovations",
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	}
+}
