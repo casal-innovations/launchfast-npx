@@ -1,13 +1,10 @@
 {
 	"name": "@launchfasthq/create",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "CLI to scaffold a new LaunchFast project",
 	"type": "module",
 	"bin": {
 		"create-launchfast": "bin/launchfast.js"
-	},
-	"dependencies": {
-		"@launchfasthq/cli": "latest"
 	},
 	"sideEffects": false,
 	"engines": {
