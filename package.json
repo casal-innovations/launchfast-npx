@@ -7,7 +7,7 @@
 		"create-launchfast": "bin/launchfast.js"
 	},
 	"dependencies": {
-		"@launchfasthq/cli": "^1.0.0"
+		"@launchfasthq/cli": "latest"
 	},
 	"sideEffects": false,
 	"engines": {
