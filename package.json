@@ -1,6 +1,6 @@
 {
 	"name": "@launchfasthq/create",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "CLI to scaffold a new LaunchFast project",
 	"type": "module",
 	"bin": {
