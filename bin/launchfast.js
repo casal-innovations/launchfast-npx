@@ -28,10 +28,10 @@ async function main() {
 		// Install the CLI package to the temp directory
 		await installPackage(tempDir, pkg)
 
-		// Dynamically import and run the CLI
+		// Dynamically import and run the CLI, passing through command line args
 		const cliPath = join(tempDir, 'node_modules', '@launchfasthq', 'cli', 'dist', 'index.js')
 		const cliModule = await import(pathToFileURL(cliPath).href)
-		await cliModule.run()
+		await cliModule.run(process.argv.slice(2))
 	} finally {
 		// Clean up the temp directory
 		await rm(tempDir, { recursive: true, force: true }).catch(() => {
