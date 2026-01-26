@@ -42,10 +42,11 @@ async function main() {
 
 /**
  * Install a package to a specific directory using npm.
+ * Uses --prefer-online to bypass npm cache and always fetch latest from registry.
  */
 function installPackage(cwd, pkg) {
 	return new Promise((resolve, reject) => {
-		const child = spawn('npm', ['install', pkg, '--no-save', '--no-package-lock'], {
+		const child = spawn('npm', ['install', pkg, '--no-save', '--no-package-lock', '--prefer-online'], {
 			cwd,
 			stdio: ['ignore', 'pipe', 'pipe'],
 			shell: process.platform === 'win32',
